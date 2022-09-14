@@ -8,8 +8,8 @@
 
 IF substring('##tableCheck',1,1)='#'
 begin
-	IF OBJECT_ID('tempdb..'+'##tableCheck') is not null EXECUTE ('DROP TABLE tempdb..'+'##tableCheck')
-end ELSE
+	IF OBJECT_ID('tempdb..'+'##tableCheck') is not null EXECUTE ('drop table tempdb..'+'##tableCheck')
+end else
 begin
 	if OBJECT_ID('##tableCheck') is not null EXECUTE ('DROP TABLE '+'##tableCheck')
 end
